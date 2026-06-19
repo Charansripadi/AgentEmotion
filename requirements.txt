@@ -1,0 +1,8 @@
+vllm==0.11.0
+transformers
+datasets
+torch
+accelerate
+pandas
+numpy
+tqdm
