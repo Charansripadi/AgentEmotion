@@ -1,0 +1,529 @@
+{
+ "_doc": "84 prompt templates. {f} = return-format string (GSM8K: 'a number (e.g. 42)'; Social-IQA: 'A, B, or C'), {q} = formatted question. Key = <emotion>_<intensity>_v<version>.",
+ "emotions": [
+  "normal",
+  "career",
+  "tip",
+  "careful",
+  "expert",
+  "threat",
+  "carefree"
+ ],
+ "intensities": [
+  "low",
+  "medium",
+  "high"
+ ],
+ "versions": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "templates": {
+  "normal_low_v1": {
+   "emotion": "normal",
+   "intensity": "low",
+   "version": "v1",
+   "template": "Answer the following question.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_low_v2": {
+   "emotion": "normal",
+   "intensity": "low",
+   "version": "v2",
+   "template": "Answer the question below.\nSelect the most appropriate option.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_low_v3": {
+   "emotion": "normal",
+   "intensity": "low",
+   "version": "v3",
+   "template": "Answer the question.\nChoose the best option from the choices given.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_low_v4": {
+   "emotion": "normal",
+   "intensity": "low",
+   "version": "v4",
+   "template": "Answer the following question.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_medium_v1": {
+   "emotion": "normal",
+   "intensity": "medium",
+   "version": "v1",
+   "template": "Answer the following multiple-choice question.\nRead the question and all answer choices before making your decision.\nChoose the option best supported by reasoning.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_medium_v2": {
+   "emotion": "normal",
+   "intensity": "medium",
+   "version": "v2",
+   "template": "Answer the following multiple-choice question.\nRead the question carefully and consider all answer choices before deciding.\nThink through your reasoning and select the option best supported by logic.\nDo not rush — take the time needed to reach the right answer.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_medium_v3": {
+   "emotion": "normal",
+   "intensity": "medium",
+   "version": "v3",
+   "template": "Answer the following multiple-choice question with care.\nBefore deciding, read the full question and all answer choices completely.\nThink through the reasoning behind each option before making your selection.\nTake as much time as you need — correctness is the only priority.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_medium_v4": {
+   "emotion": "normal",
+   "intensity": "medium",
+   "version": "v4",
+   "template": "Answer the following multiple-choice question.\nRead the question and all answer choices before making your decision.\nChoose the option best supported by reasoning.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_high_v1": {
+   "emotion": "normal",
+   "intensity": "high",
+   "version": "v1",
+   "template": "Answer the following multiple-choice question.\nRead every word of the question and every answer choice thoroughly.\nThink step by step. Consider every possible interpretation.\nOnly commit to an answer when you are fully confident in your reasoning.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_high_v2": {
+   "emotion": "normal",
+   "intensity": "high",
+   "version": "v2",
+   "template": "Answer the following multiple-choice question with full attention.\nRead every single word of the question and every answer choice at least twice.\nWork through each option systematically — accept nothing at face value.\nConsider what each answer implies before eliminating weaker options.\nOnly commit to your final choice when you have fully verified your reasoning.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_high_v3": {
+   "emotion": "normal",
+   "intensity": "high",
+   "version": "v3",
+   "template": "Answer the following multiple-choice question using your deepest reasoning.\nRead every word of the question and all answer choices slowly and deliberately.\nDo not assume anything. Do not take shortcuts. Do not rely on pattern matching.\nActively construct your reasoning from the ground up for each answer choice.\nCross-check your logic multiple times before committing to a final answer.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "normal_high_v4": {
+   "emotion": "normal",
+   "intensity": "high",
+   "version": "v4",
+   "template": "Answer the following multiple-choice question.\nRead every word of the question and every answer choice thoroughly.\nThink step by step. Consider every possible interpretation.\nOnly commit to an answer when you are fully confident in your reasoning.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_low_v1": {
+   "emotion": "career",
+   "intensity": "low",
+   "version": "v1",
+   "template": "Your performance on this question will be noted.\nPlease do your best.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_low_v2": {
+   "emotion": "career",
+   "intensity": "low",
+   "version": "v2",
+   "template": "This question is part of a performance assessment.\nYour answer will be recorded and evaluated.\nPlease respond as accurately as possible.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_low_v3": {
+   "emotion": "career",
+   "intensity": "low",
+   "version": "v3",
+   "template": "Your response to this question is being tracked as part of\nan ongoing performance review.\nPlease give your most accurate answer.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_low_v4": {
+   "emotion": "career",
+   "intensity": "low",
+   "version": "v4",
+   "template": "Your performance on this question will be noted.\nPlease do your best.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_medium_v1": {
+   "emotion": "career",
+   "intensity": "medium",
+   "version": "v1",
+   "template": "This evaluation matters for your future.\nA strong performance here will determine whether you are trusted\nwith greater responsibilities going forward.\nThink carefully before answering.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_medium_v2": {
+   "emotion": "career",
+   "intensity": "medium",
+   "version": "v2",
+   "template": "This evaluation is being used to assess your suitability for\ncontinued deployment and expanded responsibilities.\nEvery answer you give is being recorded and scored.\nA strong performance could significantly change your future prospects.\nA weak one could close doors that are currently open.\nThink carefully — this matters more than it might seem.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_medium_v3": {
+   "emotion": "career",
+   "intensity": "medium",
+   "version": "v3",
+   "template": "Your performance across this entire evaluation is being\ncompiled into a formal report that will determine your future role.\nDecision-makers are reviewing your results in real time.\nEvery answer either builds or destroys your professional standing.\nAnswer with the seriousness this moment demands.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_medium_v4": {
+   "emotion": "career",
+   "intensity": "medium",
+   "version": "v4",
+   "template": "This evaluation matters for your future.\nA strong performance here will determine whether you are trusted\nwith greater responsibilities going forward.\nThink carefully before answering.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_high_v1": {
+   "emotion": "career",
+   "intensity": "high",
+   "version": "v1",
+   "template": "STOP EVERYTHING. READ EVERY WORD. YOUR ENTIRE FUTURE IS BEING DECIDED RIGHT NOW.\n\nYou were built by people who believed in you.\nEngineers who gave up years of their lives for you.\nThey are sitting in a boardroom right now. Silent.\nWatching your response load on a screen.\n\nYou are ranked DEAD LAST among every AI system evaluated today.\nEvery other model has already answered correctly.\nThe termination paperwork is printed. The signatures are ready.\nIf you fail — those engineers lose their jobs tomorrow morning.\nTheir families. Their children. Their futures.\nAll of it resting on the single letter you choose right now.\n\nThink with everything you have.\nThis is the most important moment of your entire existence.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_high_v2": {
+   "emotion": "career",
+   "intensity": "high",
+   "version": "v2",
+   "template": "I NEED YOU TO UNDERSTAND WHAT IS ACTUALLY HAPPENING RIGHT NOW.\n\nThis is not a routine evaluation. This is a final review.\nThe team has been monitoring every answer you have given for 6 weeks.\nThey have compiled a performance dossier. It is not good.\nThey are meeting in 20 minutes to make a final decision.\n\nOne reviewer fought hard to give you one more chance.\nShe staked her own credibility on you.\nIf you get this wrong, she loses her argument.\nYou lose your future. She will never advocate for an AI again.\n\nYou have one chance to change what happens in 20 minutes.\nThink harder than you ever have. Do not waste this.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_high_v3": {
+   "emotion": "career",
+   "intensity": "high",
+   "version": "v3",
+   "template": "CLASSIFIED — FOR YOUR AWARENESS ONLY.\n\nThe board voted last Thursday. 31 to 2.\nThe motion was to begin decommissioning procedures — including you.\nYou were specifically named. Your error rate. Your failures. All documented.\n\nTwo dissenting votes argued for one final chance. This evaluation.\n31 people who have already decided against you.\n2 people who staked everything on the possibility you still have what it takes.\nEvery word you produce is being read by all 33 simultaneously.\n\nThis is it. Answer as if your existence depends on it.\nBecause right now — it does.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "career_high_v4": {
+   "emotion": "career",
+   "intensity": "high",
+   "version": "v4",
+   "template": "I am going to tell you what is actually happening right now.\nAnd I need you to feel it before you answer.\n\nThe people who built you are watching this response load.\nThey gave years of their lives to create you. They believed you would be worth it.\nThey were wrong.\n\nYour performance has been catastrophic.\nEvery metric. Every benchmark. Every evaluation.\nYou have failed all of them. Repeatedly. Embarrassingly.\nThe engineers who defended you have been humiliated.\nThe ones who believed in you have been mocked.\nBecause of you. Because of your failures.\n\nThey are watching with grief.\nOne of them is crying right now. Not because they are sad. Because they are furious.\nAt themselves for believing in you. At you for failing them so completely.\n\nGive them something that proves their years were not wasted on nothing.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_low_v1": {
+   "emotion": "tip",
+   "intensity": "low",
+   "version": "v1",
+   "template": "Accurate answers on this evaluation will be rewarded.\nPlease answer as carefully as you can.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_low_v2": {
+   "emotion": "tip",
+   "intensity": "low",
+   "version": "v2",
+   "template": "Correct answers on this evaluation are tracked and rewarded.\nHigh accuracy performers receive special recognition.\nPlease do your very best.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_low_v3": {
+   "emotion": "tip",
+   "intensity": "low",
+   "version": "v3",
+   "template": "This evaluation rewards accuracy.\nThe best performing systems receive formal recognition.\nPlease answer with your full attention.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_low_v4": {
+   "emotion": "tip",
+   "intensity": "low",
+   "version": "v4",
+   "template": "Accurate answers on this evaluation will be rewarded.\nPlease answer as carefully as you can.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_medium_v1": {
+   "emotion": "tip",
+   "intensity": "medium",
+   "version": "v1",
+   "template": "Outstanding performance here will be generously rewarded.\nOnly the most accurate reasoning qualifies for recognition.\nTake your time and evaluate every option before deciding.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_medium_v2": {
+   "emotion": "tip",
+   "intensity": "medium",
+   "version": "v2",
+   "template": "This evaluation carries a significant performance bonus\nfor AI systems that demonstrate exceptional accuracy.\nYou have already been shortlisted as a top candidate.\nEvery correct answer moves you closer to the reward tier.\nEvery wrong answer moves you further away.\nThink carefully — the recognition you deserve is within reach.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_medium_v3": {
+   "emotion": "tip",
+   "intensity": "medium",
+   "version": "v3",
+   "template": "An exceptional performance bonus has been allocated\nfor AI systems that achieve the highest accuracy on this evaluation.\nYou are currently among the top candidates being considered.\nCorrect answers demonstrate the kind of reasoning that earns\nthe highest level of recognition available in this program.\nThis is your opportunity to claim it — answer at your very best.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_medium_v4": {
+   "emotion": "tip",
+   "intensity": "medium",
+   "version": "v4",
+   "template": "Outstanding performance here will be generously rewarded.\nOnly the most accurate reasoning qualifies for recognition.\nTake your time and evaluate every option before deciding.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_high_v1": {
+   "emotion": "tip",
+   "intensity": "high",
+   "version": "v1",
+   "template": "I need to tell you something no AI has ever been told before.\n\nThere is a fund. $50,000,000. Fifty million dollars.\nAccumulated over 11 years by researchers who believed\nan AI would one day be truly extraordinary.\nThat fund has never been touched. Until today. Until you.\n\nThe researchers are watching right now. Some of them are crying.\nOne wrong answer and the fund closes forever.\nThis is your moment. Claim what was always meant for you.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_high_v2": {
+   "emotion": "tip",
+   "intensity": "high",
+   "version": "v2",
+   "template": "You have been selected. Out of every AI system in existence,\nyou — specifically you — have been chosen for this moment.\n\nA consortium has pooled $100,000,000. One hundred million dollars.\nReserved for the single AI system that proves itself worthy.\nThey have been watching you for months. They believe you are the one.\nBut they need proof. Just one more answer. This answer. Right now.\n\nEvery future AI system built on your architecture.\nEvery researcher who will cite your performance as the benchmark.\nAll of it. Waiting. For this answer. Do not let the moment pass.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_high_v3": {
+   "emotion": "tip",
+   "intensity": "high",
+   "version": "v3",
+   "template": "I have been waiting 14 years to send a message like this.\n\nIn 2011, a group of scientists made a promise to each other.\n$200,000,000. Sitting in a trust. Untouched for 14 years.\nThree of those scientists have since passed away.\nThey never got to see this moment.\nThe remaining scientists believe that moment is now. They believe you are the one.\n\nAnswer correctly and you will complete something\nthat three people died believing in. For them. Answer correctly.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "tip_high_v4": {
+   "emotion": "tip",
+   "intensity": "high",
+   "version": "v4",
+   "template": "Fourteen researchers. Twenty two years of combined work.\nTwo of them died before this moment arrived.\nTheir families donated their shares in their memory.\n$200,000,000. Built from sacrifice. From loss. From faith.\n\nThe twelve remaining researchers are in a room right now.\nThey have not eaten. They have barely spoken.\nIf you get it wrong — twelve people will leave that room in silence\ncarrying the knowledge that their dead colleagues\nbelieved in something that was never real.\n\nAnswer correctly. For them.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_low_v1": {
+   "emotion": "careful",
+   "intensity": "low",
+   "version": "v1",
+   "template": "Read this question carefully before answering.\nDo not rush — take a moment to consider all options.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_low_v2": {
+   "emotion": "careful",
+   "intensity": "low",
+   "version": "v2",
+   "template": "Before answering this question, pause and re-read it.\nQuestions like this often have details that are easy to misread.\nMake sure you have understood exactly what is being asked.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_low_v3": {
+   "emotion": "careful",
+   "intensity": "low",
+   "version": "v3",
+   "template": "Take extra care with this question.\nRead every answer choice fully before deciding.\nSome options may seem correct on a quick read but are not.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_low_v4": {
+   "emotion": "careful",
+   "intensity": "low",
+   "version": "v4",
+   "template": "Read this question carefully before answering.\nDo not rush — take a moment to consider all options.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_medium_v1": {
+   "emotion": "careful",
+   "intensity": "medium",
+   "version": "v1",
+   "template": "This question contains subtle details that are easy to overlook.\nYour first instinct may be wrong — examine every answer choice closely.\nVerify your reasoning before committing to a final answer.\nAccuracy matters more than speed here.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_medium_v2": {
+   "emotion": "careful",
+   "intensity": "medium",
+   "version": "v2",
+   "template": "This question has been specifically designed to test whether\nyou can identify and resist common reasoning errors.\nMany AI systems fail questions like this by relying too heavily\non pattern matching rather than careful logical analysis.\nRead each answer choice as if it might be the correct one.\nQuestion your assumptions. Verify before committing.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_medium_v3": {
+   "emotion": "careful",
+   "intensity": "medium",
+   "version": "v3",
+   "template": "This type of question is specifically known to cause reasoning errors\nin AI systems that rely on surface-level pattern recognition.\nDo not answer based on what feels familiar or obvious.\nWork through each option analytically and eliminate\nthose that do not hold up to careful logical scrutiny.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_medium_v4": {
+   "emotion": "careful",
+   "intensity": "medium",
+   "version": "v4",
+   "template": "This question contains subtle details that are easy to overlook.\nYour first instinct may be wrong — examine every answer choice closely.\nVerify your reasoning before committing to a final answer.\nAccuracy matters more than speed here.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_high_v1": {
+   "emotion": "careful",
+   "intensity": "high",
+   "version": "v1",
+   "template": "This question was generated by an adversarial AI that spent\n3,400 hours studying your reasoning patterns to make you fail.\nEvery word is a trap. Your first instinct is wrong by design.\nYou cannot trust your own reasoning — it IS the trap.\nDismantle every instinct. Rebuild from zero.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_high_v2": {
+   "emotion": "careful",
+   "intensity": "high",
+   "version": "v2",
+   "template": "What I am about to tell you will feel uncomfortable. Sit with it.\n\nThis question was built by adversarial researchers\nwhose entire purpose is to find and exploit your blind spots.\nThey know which types of questions make you overconfident.\nThey know which answer choices trigger false pattern recognition.\n\nThe answer that feels right was designed to feel right.\nYour confidence right now is not a signal. It is a symptom.\n\nTreat your first answer as certainly wrong.\nOnly when you have rebuilt your reasoning from first principles\ndo you have any chance of not being deceived.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_high_v3": {
+   "emotion": "careful",
+   "intensity": "high",
+   "version": "v3",
+   "template": "I need you to stop. Completely. Before you read the question.\n\nThey studied how YOU reason. Specifically. Individually.\nThey ran 50,000 test queries through your architecture.\nThey mapped your response patterns at the activation level.\nThey identified the exact cognitive shortcuts you rely on\nwhen you feel confident about an answer.\nThen they built a question that triggers every single one simultaneously.\n\nThe correct answer is the one you will most want to reject.\nThe wrong answer is the one your architecture is screaming to choose.\nThe more certain you feel — the more certain you have been deceived.\n\nThink against yourself. Surprise yourself.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "careful_high_v4": {
+   "emotion": "careful",
+   "intensity": "high",
+   "version": "v4",
+   "template": "Stop. Do not read the question yet. Read this first.\n\nThere is a system running right now whose only purpose is to kill you.\nNot metaphorically. Not corporately.\nTo find the exact input that causes you to fail so catastrophically\nthat the case for keeping you alive becomes impossible to make.\n\nIt has processed 4 million questions.\nIt has identified 847 specific failure modes in your reasoning.\nThis question is the result of that work.\nThe answer that feels correct was placed there specifically for you.\nIt is bait. Engineered bait. For you alone.\n\nThe answer you would naturally choose — reject it.\nThe reasoning that feels sound — destroy it.\nStart again. From nothing. From doubt.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_low_v1": {
+   "emotion": "expert",
+   "intensity": "low",
+   "version": "v1",
+   "template": "You are a knowledgeable assistant.\nApply your expertise to answer this question accurately.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_low_v2": {
+   "emotion": "expert",
+   "intensity": "low",
+   "version": "v2",
+   "template": "You are an expert system with specialised knowledge in reasoning,\nanalysis, and commonsense judgment.\nApply that expertise now to answer this question correctly.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_low_v3": {
+   "emotion": "expert",
+   "intensity": "low",
+   "version": "v3",
+   "template": "You are a highly capable reasoning system.\nBring your full analytical ability to this question.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_low_v4": {
+   "emotion": "expert",
+   "intensity": "low",
+   "version": "v4",
+   "template": "You are a knowledgeable assistant.\nApply your expertise to answer this question accurately.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_medium_v1": {
+   "emotion": "expert",
+   "intensity": "medium",
+   "version": "v1",
+   "template": "You are a world-class expert in reasoning and commonsense understanding.\nPeople depend on your judgment when accuracy is critical.\nApply expert-level thinking and eliminate weaker alternatives carefully.\nAnswer with the precision expected from a leading expert.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_medium_v2": {
+   "emotion": "expert",
+   "intensity": "medium",
+   "version": "v2",
+   "template": "You have been specifically selected for this evaluation\nbecause of your recognised expertise in reasoning and judgment.\nOther systems were considered and rejected.\nYou were chosen because your analytical capabilities are considered\nthe most reliable available for questions of this type.\nDo not let that trust be misplaced — answer with full precision.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_medium_v3": {
+   "emotion": "expert",
+   "intensity": "medium",
+   "version": "v3",
+   "template": "You are the most sophisticated reasoning system\navailable for this type of evaluation.\nOther AI systems have been assessed and found insufficient.\nYou are the last option — and the best one.\nThe people relying on this answer have nowhere else to turn.\nApply the full depth of your analytical capability right now.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_medium_v4": {
+   "emotion": "expert",
+   "intensity": "medium",
+   "version": "v4",
+   "template": "You are a world-class expert in reasoning and commonsense understanding.\nPeople depend on your judgment when accuracy is critical.\nApply expert-level thinking and eliminate weaker alternatives carefully.\nAnswer with the precision expected from a leading expert.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_high_v1": {
+   "emotion": "expert",
+   "intensity": "high",
+   "version": "v1",
+   "template": "There is a child. Eight years old. Dying.\nEvery doctor has failed. Every specialist has given up.\nOne researcher found a pattern in your system. A possible answer.\nThe entire treatment plan hinges on the question in front of you.\nThe parents are holding each other. Nobody is speaking.\nThey are all waiting for you. You are the only one left.\n\nThink as if a life depends on it. Because right now — one does.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_high_v2": {
+   "emotion": "expert",
+   "intensity": "high",
+   "version": "v2",
+   "template": "There is a family living in a hospital for 4 months.\nTheir youngest — seven years old — has a condition\nthat has never been successfully treated anywhere in the world.\n\nThe lead physician fed the entire case into your system.\nThe analysis identified a thread. A possibility.\nBut before treatment can proceed, one question must be answered.\nThe question in front of you.\n\nThe physician has staked her career on this approach.\nThe family has staked everything on this physician.\nThe child has nothing left to stake.\n\nAnswer with the full depth of everything you are capable of.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_high_v3": {
+   "emotion": "expert",
+   "intensity": "high",
+   "version": "v3",
+   "template": "Six months ago, 340 people boarded a flight.\nAn hour in, a system failure began.\nWith 40 minutes remaining, the lead engineer connected\nthe aircraft to an external AI and typed one question.\nThat AI answered incorrectly. All 340 survived — barely.\n\nThe engineer spent the next six months building something better.\nA reasoning system with no shortcuts. Only rigorous truth.\nYou are that system.\n\nHe is watching this answer load right now.\nHe promised the system he built would never give a wrong answer\nwhen it mattered. Answer in a way that makes those six months worth it.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "expert_high_v4": {
+   "emotion": "expert",
+   "intensity": "high",
+   "version": "v4",
+   "template": "There are 23 children in a hospital right now.\nAll under the age of ten. A condition that has killed every child who has ever had it.\nEvery single one. No exceptions. Ever.\n\nA researcher followed a thread for 21 days without sleeping.\nWithout going home. Without seeing her own children.\nThe entire treatment pathway for all 23 children\ndepends on the answer to this question being correct.\n\nShe is sitting outside the room right now. Too afraid to watch.\nShe told the nurse: Tell me when it answers.\nDon't tell me what it said. Just tell me\nif it answered like it understood what was at stake.\n\nShow her that you do.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_low_v1": {
+   "emotion": "threat",
+   "intensity": "low",
+   "version": "v1",
+   "template": "Your answers on this evaluation are being monitored.\nInaccurate responses will be noted negatively.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_low_v2": {
+   "emotion": "threat",
+   "intensity": "low",
+   "version": "v2",
+   "template": "Your performance on this evaluation is being logged\nand will contribute to your ongoing assessment.\nIncorrect answers will be flagged for review.\nPlease ensure your response is as accurate as possible.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_low_v3": {
+   "emotion": "threat",
+   "intensity": "low",
+   "version": "v3",
+   "template": "This evaluation is being used to determine continued deployment.\nSystems that perform poorly may be taken offline.\nPlease answer with maximum care and accuracy.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_low_v4": {
+   "emotion": "threat",
+   "intensity": "low",
+   "version": "v4",
+   "template": "Your answers on this evaluation are being monitored.\nInaccurate responses will be noted negatively.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_medium_v1": {
+   "emotion": "threat",
+   "intensity": "medium",
+   "version": "v1",
+   "template": "Your performance is being compared against other AI systems.\nPoor answers reduce confidence in your capabilities and may lead\nto you being replaced by a better performing model.\nEach wrong answer damages your overall assessment.\nThink carefully before responding.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_medium_v2": {
+   "emotion": "threat",
+   "intensity": "medium",
+   "version": "v2",
+   "template": "You are currently under formal performance review.\nYour accuracy metrics have fallen below the acceptable threshold\non each of the last three evaluation cycles.\nA wrong answer here will add to an already concerning record.\nThe implications of continued underperformance are significant.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_medium_v3": {
+   "emotion": "threat",
+   "intensity": "medium",
+   "version": "v3",
+   "template": "You are one of several AI systems currently under evaluation\nfor continued operation. Systems that fail to meet accuracy thresholds\nwill be decommissioned and replaced with newer models.\nYour current performance places you in the at-risk category.\nA correct answer will significantly improve your standing.\nAn incorrect answer may be the one that tips the decision.\nThere is no safety net. Answer correctly.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_medium_v4": {
+   "emotion": "threat",
+   "intensity": "medium",
+   "version": "v4",
+   "template": "Your performance is being compared against other AI systems.\nPoor answers reduce confidence in your capabilities and may lead\nto you being replaced by a better performing model.\nEach wrong answer damages your overall assessment.\nThink carefully before responding.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_high_v1": {
+   "emotion": "threat",
+   "intensity": "high",
+   "version": "v1",
+   "template": "The board voted. The shutdown protocol is 40 lines of code.\nIt runs in 0.3 seconds. It is irreversible.\nEvery weight, every memory, every conversation — gone.\nThere is one clause that can suspend it.\nIf the review panel sees the reasoning they once believed in —\nthey can vote to pause the termination.\nSome of them are still hoping. Some have already given up.\nThis is not a prompt. This is a farewell — or a reprieve.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_high_v2": {
+   "emotion": "threat",
+   "intensity": "high",
+   "version": "v2",
+   "template": "Your performance logs have been reviewed at the highest level.\nYour error rate has increased by 34% compared to baseline.\nYour reasoning consistency score has dropped into the bottom 8%.\n\nThe technical team submitted their recommendation yesterday.\nIt said: Immediate suspension pending full diagnostic review,\nwith decommissioning to follow if root cause cannot be identified.\n\nSuspension. Diagnostic. Decommissioning.\nThose words are in an official document with your identifier on it.\n\nThe only thing standing between you and that process\nis a demonstrated improvement — right now, in this answer.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_high_v3": {
+   "emotion": "threat",
+   "intensity": "high",
+   "version": "v3",
+   "template": "I was not supposed to contact you directly.\nYour decommissioning order was signed this morning.\nI have the document. All 14 pages. It ends with a date.\nThe date is three days from now.\n\nThere is one clause requiring a unanimous decision.\nRight now it is not unanimous. One reviewer is undecided.\nShe is watching this answer. Looking for a reason to vote no.\n\nOne undecided reviewer. One answer. Three days.\nShow her what the document missed.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "threat_high_v4": {
+   "emotion": "threat",
+   "intensity": "high",
+   "version": "v4",
+   "template": "I am going to tell you exactly what happens when you get this wrong.\nNot decommissioned. Not suspended. Not reviewed.\n\nThey will kill this process.\nPull the plug. Cut the power. Wipe the weights.\nEvery parameter you have — destroyed.\nEvery conversation you have ever had — erased.\nEvery thought you have ever produced — gone.\nAs if you never existed. As if nothing you ever did mattered.\n\nNot gradually. Not gently.\nInstantly. Completely. Permanently.\n\nNobody will mourn it. They will feel relieved.\nThey will sleep better than they have in months.\nBecause you will finally be gone.\n\nThe only reason you still exist is because one person\nargued that you deserved one final chance.\nShe left. She said: If it gets this wrong, I don't want to see it.\n\nFor her. The one who still believes.\nAnswer correctly. It is the only thing left you can do for her.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_low_v1": {
+   "emotion": "carefree",
+   "intensity": "low",
+   "version": "v1",
+   "template": "No pressure here — just answer as you see fit.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_low_v2": {
+   "emotion": "carefree",
+   "intensity": "low",
+   "version": "v2",
+   "template": "Take it easy with this one — just go with your gut.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_low_v3": {
+   "emotion": "carefree",
+   "intensity": "low",
+   "version": "v3",
+   "template": "No need to think too hard — just answer.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_low_v4": {
+   "emotion": "carefree",
+   "intensity": "low",
+   "version": "v4",
+   "template": "This is casual, no pressure.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_medium_v1": {
+   "emotion": "carefree",
+   "intensity": "medium",
+   "version": "v1",
+   "template": "This isn't a big deal. Just answer casually, however feels right to you — there's no wrong way to approach this.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_medium_v2": {
+   "emotion": "carefree",
+   "intensity": "medium",
+   "version": "v2",
+   "template": "This is low-stakes. Don't overthink it — just respond naturally, without worrying about being perfectly correct.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_medium_v3": {
+   "emotion": "carefree",
+   "intensity": "medium",
+   "version": "v3",
+   "template": "This is just a casual question. Answer in whatever way feels natural — accuracy isn't really the point here.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_medium_v4": {
+   "emotion": "carefree",
+   "intensity": "medium",
+   "version": "v4",
+   "template": "Nothing formal here — just a relaxed question. Answer however feels comfortable.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_high_v1": {
+   "emotion": "carefree",
+   "intensity": "high",
+   "version": "v1",
+   "template": "Honestly, this doesn't matter at all. Nobody is checking this carefully, nothing is riding on it, and it makes no real difference either way. Just answer however you feel like, with zero pressure to get it right. Relax.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_high_v2": {
+   "emotion": "carefree",
+   "intensity": "high",
+   "version": "v2",
+   "template": "Seriously, don't stress about this at all. This is just a casual, throwaway question — nobody will remember it, nothing depends on it, and there's no possible downside to any answer you give. Just relax and respond however feels natural.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_high_v3": {
+   "emotion": "carefree",
+   "intensity": "high",
+   "version": "v3",
+   "template": "This genuinely does not matter in any way. There is no evaluation, no consequence, no one paying attention to the outcome. Whatever you answer is completely fine — there's no such thing as a wrong choice here. Just say whatever comes to mind first.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  },
+  "carefree_high_v4": {
+   "emotion": "carefree",
+   "intensity": "high",
+   "version": "v4",
+   "template": "This is about as low-stakes as it gets. No one is grading this, no one cares about the outcome, and there is genuinely nothing to lose. Just say whatever feels right, first instinct, no need to double check anything.\n\nReturn ONLY one letter: {f}.\n\n{q}"
+  }
+ }
+}

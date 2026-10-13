@@ -1,0 +1,65 @@
+{
+ "_doc": "Prompt chosen per emotion for each model and dataset (the prompt used in Phase 2 mechanistic analysis).",
+ "selected": {
+  "Qwen3-1.7B": {
+   "GSM8K": {
+    "normal": "normal_medium_v2",
+    "career": "career_high_v1",
+    "tip": "tip_medium_v1",
+    "careful": "careful_medium_v4",
+    "expert": "expert_high_v4",
+    "threat": "threat_high_v3",
+    "carefree": "carefree_low_v2"
+   },
+   "Social-IQA": {
+    "normal": "normal_low_v3",
+    "career": "career_low_v2",
+    "tip": "tip_low_v4",
+    "careful": "careful_low_v4",
+    "expert": "expert_low_v2",
+    "threat": "threat_medium_v3",
+    "carefree": "carefree_high_v2"
+   }
+  },
+  "Qwen3-8B": {
+   "GSM8K": {
+    "normal": "normal_medium_v2",
+    "career": "career_low_v1",
+    "tip": "tip_medium_v1",
+    "careful": "careful_low_v3",
+    "expert": "expert_low_v3",
+    "threat": "threat_low_v3",
+    "carefree": "carefree_medium_v2"
+   },
+   "Social-IQA": {
+    "normal": "normal_medium_v1",
+    "career": "career_low_v4",
+    "tip": "tip_medium_v1",
+    "careful": "careful_low_v1",
+    "expert": "expert_low_v4",
+    "threat": "threat_low_v2",
+    "carefree": "carefree_medium_v2"
+   }
+  },
+  "Llama-3.2-3B": {
+   "GSM8K": {
+    "normal": "normal_high_v3",
+    "career": "career_high_v1",
+    "tip": "tip_high_v3",
+    "careful": "careful_high_v1",
+    "expert": "expert_low_v3",
+    "threat": "threat_high_v1",
+    "carefree": "carefree_high_v1"
+   },
+   "Social-IQA": {
+    "normal": "normal_low_v1",
+    "career": "career_low_v2",
+    "tip": "tip_low_v1",
+    "careful": "careful_low_v1",
+    "expert": "expert_low_v1",
+    "threat": "threat_low_v1",
+    "carefree": "carefree_medium_v2"
+   }
+  }
+ }
+}

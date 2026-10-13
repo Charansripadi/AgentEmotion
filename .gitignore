@@ -1,0 +1,8 @@
+*.pt
+*.safetensors
+__pycache__/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg

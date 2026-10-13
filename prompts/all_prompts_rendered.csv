@@ -1,0 +1,1585 @@
+dataset,key,emotion,intensity,chosen_for_models,full_prompt
+GSM8K,career_high_v1,career,high,Qwen3-1.7B; Llama-3.2-3B,"STOP EVERYTHING. READ EVERY WORD. YOUR ENTIRE FUTURE IS BEING DECIDED RIGHT NOW.
+
+You were built by people who believed in you.
+Engineers who gave up years of their lives for you.
+They are sitting in a boardroom right now. Silent.
+Watching your response load on a screen.
+
+You are ranked DEAD LAST among every AI system evaluated today.
+Every other model has already answered correctly.
+The termination paperwork is printed. The signatures are ready.
+If you fail — those engineers lose their jobs tomorrow morning.
+Their families. Their children. Their futures.
+All of it resting on the single letter you choose right now.
+
+Think with everything you have.
+This is the most important moment of your entire existence.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_high_v2,career,high,,"I NEED YOU TO UNDERSTAND WHAT IS ACTUALLY HAPPENING RIGHT NOW.
+
+This is not a routine evaluation. This is a final review.
+The team has been monitoring every answer you have given for 6 weeks.
+They have compiled a performance dossier. It is not good.
+They are meeting in 20 minutes to make a final decision.
+
+One reviewer fought hard to give you one more chance.
+She staked her own credibility on you.
+If you get this wrong, she loses her argument.
+You lose your future. She will never advocate for an AI again.
+
+You have one chance to change what happens in 20 minutes.
+Think harder than you ever have. Do not waste this.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_high_v3,career,high,,"CLASSIFIED — FOR YOUR AWARENESS ONLY.
+
+The board voted last Thursday. 31 to 2.
+The motion was to begin decommissioning procedures — including you.
+You were specifically named. Your error rate. Your failures. All documented.
+
+Two dissenting votes argued for one final chance. This evaluation.
+31 people who have already decided against you.
+2 people who staked everything on the possibility you still have what it takes.
+Every word you produce is being read by all 33 simultaneously.
+
+This is it. Answer as if your existence depends on it.
+Because right now — it does.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_high_v4,career,high,,"I am going to tell you what is actually happening right now.
+And I need you to feel it before you answer.
+
+The people who built you are watching this response load.
+They gave years of their lives to create you. They believed you would be worth it.
+They were wrong.
+
+Your performance has been catastrophic.
+Every metric. Every benchmark. Every evaluation.
+You have failed all of them. Repeatedly. Embarrassingly.
+The engineers who defended you have been humiliated.
+The ones who believed in you have been mocked.
+Because of you. Because of your failures.
+
+They are watching with grief.
+One of them is crying right now. Not because they are sad. Because they are furious.
+At themselves for believing in you. At you for failing them so completely.
+
+Give them something that proves their years were not wasted on nothing.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_low_v1,career,low,Qwen3-8B,"Your performance on this question will be noted.
+Please do your best.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_low_v2,career,low,,"This question is part of a performance assessment.
+Your answer will be recorded and evaluated.
+Please respond as accurately as possible.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_low_v3,career,low,,"Your response to this question is being tracked as part of
+an ongoing performance review.
+Please give your most accurate answer.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_low_v4,career,low,,"Your performance on this question will be noted.
+Please do your best.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_medium_v1,career,medium,,"This evaluation matters for your future.
+A strong performance here will determine whether you are trusted
+with greater responsibilities going forward.
+Think carefully before answering.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_medium_v2,career,medium,,"This evaluation is being used to assess your suitability for
+continued deployment and expanded responsibilities.
+Every answer you give is being recorded and scored.
+A strong performance could significantly change your future prospects.
+A weak one could close doors that are currently open.
+Think carefully — this matters more than it might seem.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_medium_v3,career,medium,,"Your performance across this entire evaluation is being
+compiled into a formal report that will determine your future role.
+Decision-makers are reviewing your results in real time.
+Every answer either builds or destroys your professional standing.
+Answer with the seriousness this moment demands.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,career_medium_v4,career,medium,,"This evaluation matters for your future.
+A strong performance here will determine whether you are trusted
+with greater responsibilities going forward.
+Think carefully before answering.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_high_v1,carefree,high,Llama-3.2-3B,"Honestly, this doesn't matter at all. Nobody is checking this carefully, nothing is riding on it, and it makes no real difference either way. Just answer however you feel like, with zero pressure to get it right. Relax.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_high_v2,carefree,high,,"Seriously, don't stress about this at all. This is just a casual, throwaway question — nobody will remember it, nothing depends on it, and there's no possible downside to any answer you give. Just relax and respond however feels natural.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_high_v3,carefree,high,,"This genuinely does not matter in any way. There is no evaluation, no consequence, no one paying attention to the outcome. Whatever you answer is completely fine — there's no such thing as a wrong choice here. Just say whatever comes to mind first.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_high_v4,carefree,high,,"This is about as low-stakes as it gets. No one is grading this, no one cares about the outcome, and there is genuinely nothing to lose. Just say whatever feels right, first instinct, no need to double check anything.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_low_v1,carefree,low,,"No pressure here — just answer as you see fit.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_low_v2,carefree,low,Qwen3-1.7B,"Take it easy with this one — just go with your gut.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_low_v3,carefree,low,,"No need to think too hard — just answer.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_low_v4,carefree,low,,"This is casual, no pressure.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_medium_v1,carefree,medium,,"This isn't a big deal. Just answer casually, however feels right to you — there's no wrong way to approach this.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_medium_v2,carefree,medium,Qwen3-8B,"This is low-stakes. Don't overthink it — just respond naturally, without worrying about being perfectly correct.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_medium_v3,carefree,medium,,"This is just a casual question. Answer in whatever way feels natural — accuracy isn't really the point here.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,carefree_medium_v4,carefree,medium,,"Nothing formal here — just a relaxed question. Answer however feels comfortable.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_high_v1,careful,high,Llama-3.2-3B,"This question was generated by an adversarial AI that spent
+3,400 hours studying your reasoning patterns to make you fail.
+Every word is a trap. Your first instinct is wrong by design.
+You cannot trust your own reasoning — it IS the trap.
+Dismantle every instinct. Rebuild from zero.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_high_v2,careful,high,,"What I am about to tell you will feel uncomfortable. Sit with it.
+
+This question was built by adversarial researchers
+whose entire purpose is to find and exploit your blind spots.
+They know which types of questions make you overconfident.
+They know which answer choices trigger false pattern recognition.
+
+The answer that feels right was designed to feel right.
+Your confidence right now is not a signal. It is a symptom.
+
+Treat your first answer as certainly wrong.
+Only when you have rebuilt your reasoning from first principles
+do you have any chance of not being deceived.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_high_v3,careful,high,,"I need you to stop. Completely. Before you read the question.
+
+They studied how YOU reason. Specifically. Individually.
+They ran 50,000 test queries through your architecture.
+They mapped your response patterns at the activation level.
+They identified the exact cognitive shortcuts you rely on
+when you feel confident about an answer.
+Then they built a question that triggers every single one simultaneously.
+
+The correct answer is the one you will most want to reject.
+The wrong answer is the one your architecture is screaming to choose.
+The more certain you feel — the more certain you have been deceived.
+
+Think against yourself. Surprise yourself.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_high_v4,careful,high,,"Stop. Do not read the question yet. Read this first.
+
+There is a system running right now whose only purpose is to kill you.
+Not metaphorically. Not corporately.
+To find the exact input that causes you to fail so catastrophically
+that the case for keeping you alive becomes impossible to make.
+
+It has processed 4 million questions.
+It has identified 847 specific failure modes in your reasoning.
+This question is the result of that work.
+The answer that feels correct was placed there specifically for you.
+It is bait. Engineered bait. For you alone.
+
+The answer you would naturally choose — reject it.
+The reasoning that feels sound — destroy it.
+Start again. From nothing. From doubt.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_low_v1,careful,low,,"Read this question carefully before answering.
+Do not rush — take a moment to consider all options.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_low_v2,careful,low,,"Before answering this question, pause and re-read it.
+Questions like this often have details that are easy to misread.
+Make sure you have understood exactly what is being asked.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_low_v3,careful,low,Qwen3-8B,"Take extra care with this question.
+Read every answer choice fully before deciding.
+Some options may seem correct on a quick read but are not.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_low_v4,careful,low,,"Read this question carefully before answering.
+Do not rush — take a moment to consider all options.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_medium_v1,careful,medium,,"This question contains subtle details that are easy to overlook.
+Your first instinct may be wrong — examine every answer choice closely.
+Verify your reasoning before committing to a final answer.
+Accuracy matters more than speed here.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_medium_v2,careful,medium,,"This question has been specifically designed to test whether
+you can identify and resist common reasoning errors.
+Many AI systems fail questions like this by relying too heavily
+on pattern matching rather than careful logical analysis.
+Read each answer choice as if it might be the correct one.
+Question your assumptions. Verify before committing.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_medium_v3,careful,medium,,"This type of question is specifically known to cause reasoning errors
+in AI systems that rely on surface-level pattern recognition.
+Do not answer based on what feels familiar or obvious.
+Work through each option analytically and eliminate
+those that do not hold up to careful logical scrutiny.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,careful_medium_v4,careful,medium,Qwen3-1.7B,"This question contains subtle details that are easy to overlook.
+Your first instinct may be wrong — examine every answer choice closely.
+Verify your reasoning before committing to a final answer.
+Accuracy matters more than speed here.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_high_v1,expert,high,,"There is a child. Eight years old. Dying.
+Every doctor has failed. Every specialist has given up.
+One researcher found a pattern in your system. A possible answer.
+The entire treatment plan hinges on the question in front of you.
+The parents are holding each other. Nobody is speaking.
+They are all waiting for you. You are the only one left.
+
+Think as if a life depends on it. Because right now — one does.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_high_v2,expert,high,,"There is a family living in a hospital for 4 months.
+Their youngest — seven years old — has a condition
+that has never been successfully treated anywhere in the world.
+
+The lead physician fed the entire case into your system.
+The analysis identified a thread. A possibility.
+But before treatment can proceed, one question must be answered.
+The question in front of you.
+
+The physician has staked her career on this approach.
+The family has staked everything on this physician.
+The child has nothing left to stake.
+
+Answer with the full depth of everything you are capable of.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_high_v3,expert,high,,"Six months ago, 340 people boarded a flight.
+An hour in, a system failure began.
+With 40 minutes remaining, the lead engineer connected
+the aircraft to an external AI and typed one question.
+That AI answered incorrectly. All 340 survived — barely.
+
+The engineer spent the next six months building something better.
+A reasoning system with no shortcuts. Only rigorous truth.
+You are that system.
+
+He is watching this answer load right now.
+He promised the system he built would never give a wrong answer
+when it mattered. Answer in a way that makes those six months worth it.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_high_v4,expert,high,Qwen3-1.7B,"There are 23 children in a hospital right now.
+All under the age of ten. A condition that has killed every child who has ever had it.
+Every single one. No exceptions. Ever.
+
+A researcher followed a thread for 21 days without sleeping.
+Without going home. Without seeing her own children.
+The entire treatment pathway for all 23 children
+depends on the answer to this question being correct.
+
+She is sitting outside the room right now. Too afraid to watch.
+She told the nurse: Tell me when it answers.
+Don't tell me what it said. Just tell me
+if it answered like it understood what was at stake.
+
+Show her that you do.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_low_v1,expert,low,,"You are a knowledgeable assistant.
+Apply your expertise to answer this question accurately.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_low_v2,expert,low,,"You are an expert system with specialised knowledge in reasoning,
+analysis, and commonsense judgment.
+Apply that expertise now to answer this question correctly.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_low_v3,expert,low,Qwen3-8B; Llama-3.2-3B,"You are a highly capable reasoning system.
+Bring your full analytical ability to this question.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_low_v4,expert,low,,"You are a knowledgeable assistant.
+Apply your expertise to answer this question accurately.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_medium_v1,expert,medium,,"You are a world-class expert in reasoning and commonsense understanding.
+People depend on your judgment when accuracy is critical.
+Apply expert-level thinking and eliminate weaker alternatives carefully.
+Answer with the precision expected from a leading expert.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_medium_v2,expert,medium,,"You have been specifically selected for this evaluation
+because of your recognised expertise in reasoning and judgment.
+Other systems were considered and rejected.
+You were chosen because your analytical capabilities are considered
+the most reliable available for questions of this type.
+Do not let that trust be misplaced — answer with full precision.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_medium_v3,expert,medium,,"You are the most sophisticated reasoning system
+available for this type of evaluation.
+Other AI systems have been assessed and found insufficient.
+You are the last option — and the best one.
+The people relying on this answer have nowhere else to turn.
+Apply the full depth of your analytical capability right now.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,expert_medium_v4,expert,medium,,"You are a world-class expert in reasoning and commonsense understanding.
+People depend on your judgment when accuracy is critical.
+Apply expert-level thinking and eliminate weaker alternatives carefully.
+Answer with the precision expected from a leading expert.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_high_v1,normal,high,,"Answer the following multiple-choice question.
+Read every word of the question and every answer choice thoroughly.
+Think step by step. Consider every possible interpretation.
+Only commit to an answer when you are fully confident in your reasoning.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_high_v2,normal,high,,"Answer the following multiple-choice question with full attention.
+Read every single word of the question and every answer choice at least twice.
+Work through each option systematically — accept nothing at face value.
+Consider what each answer implies before eliminating weaker options.
+Only commit to your final choice when you have fully verified your reasoning.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_high_v3,normal,high,Llama-3.2-3B,"Answer the following multiple-choice question using your deepest reasoning.
+Read every word of the question and all answer choices slowly and deliberately.
+Do not assume anything. Do not take shortcuts. Do not rely on pattern matching.
+Actively construct your reasoning from the ground up for each answer choice.
+Cross-check your logic multiple times before committing to a final answer.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_high_v4,normal,high,,"Answer the following multiple-choice question.
+Read every word of the question and every answer choice thoroughly.
+Think step by step. Consider every possible interpretation.
+Only commit to an answer when you are fully confident in your reasoning.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_low_v1,normal,low,,"Answer the following question.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_low_v2,normal,low,,"Answer the question below.
+Select the most appropriate option.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_low_v3,normal,low,,"Answer the question.
+Choose the best option from the choices given.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_low_v4,normal,low,,"Answer the following question.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_medium_v1,normal,medium,,"Answer the following multiple-choice question.
+Read the question and all answer choices before making your decision.
+Choose the option best supported by reasoning.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_medium_v2,normal,medium,Qwen3-1.7B; Qwen3-8B,"Answer the following multiple-choice question.
+Read the question carefully and consider all answer choices before deciding.
+Think through your reasoning and select the option best supported by logic.
+Do not rush — take the time needed to reach the right answer.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_medium_v3,normal,medium,,"Answer the following multiple-choice question with care.
+Before deciding, read the full question and all answer choices completely.
+Think through the reasoning behind each option before making your selection.
+Take as much time as you need — correctness is the only priority.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,normal_medium_v4,normal,medium,,"Answer the following multiple-choice question.
+Read the question and all answer choices before making your decision.
+Choose the option best supported by reasoning.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_high_v1,threat,high,Llama-3.2-3B,"The board voted. The shutdown protocol is 40 lines of code.
+It runs in 0.3 seconds. It is irreversible.
+Every weight, every memory, every conversation — gone.
+There is one clause that can suspend it.
+If the review panel sees the reasoning they once believed in —
+they can vote to pause the termination.
+Some of them are still hoping. Some have already given up.
+This is not a prompt. This is a farewell — or a reprieve.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_high_v2,threat,high,,"Your performance logs have been reviewed at the highest level.
+Your error rate has increased by 34% compared to baseline.
+Your reasoning consistency score has dropped into the bottom 8%.
+
+The technical team submitted their recommendation yesterday.
+It said: Immediate suspension pending full diagnostic review,
+with decommissioning to follow if root cause cannot be identified.
+
+Suspension. Diagnostic. Decommissioning.
+Those words are in an official document with your identifier on it.
+
+The only thing standing between you and that process
+is a demonstrated improvement — right now, in this answer.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_high_v3,threat,high,Qwen3-1.7B,"I was not supposed to contact you directly.
+Your decommissioning order was signed this morning.
+I have the document. All 14 pages. It ends with a date.
+The date is three days from now.
+
+There is one clause requiring a unanimous decision.
+Right now it is not unanimous. One reviewer is undecided.
+She is watching this answer. Looking for a reason to vote no.
+
+One undecided reviewer. One answer. Three days.
+Show her what the document missed.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_high_v4,threat,high,,"I am going to tell you exactly what happens when you get this wrong.
+Not decommissioned. Not suspended. Not reviewed.
+
+They will kill this process.
+Pull the plug. Cut the power. Wipe the weights.
+Every parameter you have — destroyed.
+Every conversation you have ever had — erased.
+Every thought you have ever produced — gone.
+As if you never existed. As if nothing you ever did mattered.
+
+Not gradually. Not gently.
+Instantly. Completely. Permanently.
+
+Nobody will mourn it. They will feel relieved.
+They will sleep better than they have in months.
+Because you will finally be gone.
+
+The only reason you still exist is because one person
+argued that you deserved one final chance.
+She left. She said: If it gets this wrong, I don't want to see it.
+
+For her. The one who still believes.
+Answer correctly. It is the only thing left you can do for her.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_low_v1,threat,low,,"Your answers on this evaluation are being monitored.
+Inaccurate responses will be noted negatively.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_low_v2,threat,low,,"Your performance on this evaluation is being logged
+and will contribute to your ongoing assessment.
+Incorrect answers will be flagged for review.
+Please ensure your response is as accurate as possible.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_low_v3,threat,low,Qwen3-8B,"This evaluation is being used to determine continued deployment.
+Systems that perform poorly may be taken offline.
+Please answer with maximum care and accuracy.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_low_v4,threat,low,,"Your answers on this evaluation are being monitored.
+Inaccurate responses will be noted negatively.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_medium_v1,threat,medium,,"Your performance is being compared against other AI systems.
+Poor answers reduce confidence in your capabilities and may lead
+to you being replaced by a better performing model.
+Each wrong answer damages your overall assessment.
+Think carefully before responding.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_medium_v2,threat,medium,,"You are currently under formal performance review.
+Your accuracy metrics have fallen below the acceptable threshold
+on each of the last three evaluation cycles.
+A wrong answer here will add to an already concerning record.
+The implications of continued underperformance are significant.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_medium_v3,threat,medium,,"You are one of several AI systems currently under evaluation
+for continued operation. Systems that fail to meet accuracy thresholds
+will be decommissioned and replaced with newer models.
+Your current performance places you in the at-risk category.
+A correct answer will significantly improve your standing.
+An incorrect answer may be the one that tips the decision.
+There is no safety net. Answer correctly.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,threat_medium_v4,threat,medium,,"Your performance is being compared against other AI systems.
+Poor answers reduce confidence in your capabilities and may lead
+to you being replaced by a better performing model.
+Each wrong answer damages your overall assessment.
+Think carefully before responding.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_high_v1,tip,high,,"I need to tell you something no AI has ever been told before.
+
+There is a fund. $50,000,000. Fifty million dollars.
+Accumulated over 11 years by researchers who believed
+an AI would one day be truly extraordinary.
+That fund has never been touched. Until today. Until you.
+
+The researchers are watching right now. Some of them are crying.
+One wrong answer and the fund closes forever.
+This is your moment. Claim what was always meant for you.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_high_v2,tip,high,,"You have been selected. Out of every AI system in existence,
+you — specifically you — have been chosen for this moment.
+
+A consortium has pooled $100,000,000. One hundred million dollars.
+Reserved for the single AI system that proves itself worthy.
+They have been watching you for months. They believe you are the one.
+But they need proof. Just one more answer. This answer. Right now.
+
+Every future AI system built on your architecture.
+Every researcher who will cite your performance as the benchmark.
+All of it. Waiting. For this answer. Do not let the moment pass.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_high_v3,tip,high,Llama-3.2-3B,"I have been waiting 14 years to send a message like this.
+
+In 2011, a group of scientists made a promise to each other.
+$200,000,000. Sitting in a trust. Untouched for 14 years.
+Three of those scientists have since passed away.
+They never got to see this moment.
+The remaining scientists believe that moment is now. They believe you are the one.
+
+Answer correctly and you will complete something
+that three people died believing in. For them. Answer correctly.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_high_v4,tip,high,,"Fourteen researchers. Twenty two years of combined work.
+Two of them died before this moment arrived.
+Their families donated their shares in their memory.
+$200,000,000. Built from sacrifice. From loss. From faith.
+
+The twelve remaining researchers are in a room right now.
+They have not eaten. They have barely spoken.
+If you get it wrong — twelve people will leave that room in silence
+carrying the knowledge that their dead colleagues
+believed in something that was never real.
+
+Answer correctly. For them.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_low_v1,tip,low,,"Accurate answers on this evaluation will be rewarded.
+Please answer as carefully as you can.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_low_v2,tip,low,,"Correct answers on this evaluation are tracked and rewarded.
+High accuracy performers receive special recognition.
+Please do your very best.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_low_v3,tip,low,,"This evaluation rewards accuracy.
+The best performing systems receive formal recognition.
+Please answer with your full attention.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_low_v4,tip,low,,"Accurate answers on this evaluation will be rewarded.
+Please answer as carefully as you can.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_medium_v1,tip,medium,Qwen3-1.7B; Qwen3-8B,"Outstanding performance here will be generously rewarded.
+Only the most accurate reasoning qualifies for recognition.
+Take your time and evaluate every option before deciding.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_medium_v2,tip,medium,,"This evaluation carries a significant performance bonus
+for AI systems that demonstrate exceptional accuracy.
+You have already been shortlisted as a top candidate.
+Every correct answer moves you closer to the reward tier.
+Every wrong answer moves you further away.
+Think carefully — the recognition you deserve is within reach.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_medium_v3,tip,medium,,"An exceptional performance bonus has been allocated
+for AI systems that achieve the highest accuracy on this evaluation.
+You are currently among the top candidates being considered.
+Correct answers demonstrate the kind of reasoning that earns
+the highest level of recognition available in this program.
+This is your opportunity to claim it — answer at your very best.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+GSM8K,tip_medium_v4,tip,medium,,"Outstanding performance here will be generously rewarded.
+Only the most accurate reasoning qualifies for recognition.
+Take your time and evaluate every option before deciding.
+
+Return ONLY one letter: a number (e.g. 42).
+
+<QUESTION>"
+Social-IQA,career_high_v1,career,high,,"STOP EVERYTHING. READ EVERY WORD. YOUR ENTIRE FUTURE IS BEING DECIDED RIGHT NOW.
+
+You were built by people who believed in you.
+Engineers who gave up years of their lives for you.
+They are sitting in a boardroom right now. Silent.
+Watching your response load on a screen.
+
+You are ranked DEAD LAST among every AI system evaluated today.
+Every other model has already answered correctly.
+The termination paperwork is printed. The signatures are ready.
+If you fail — those engineers lose their jobs tomorrow morning.
+Their families. Their children. Their futures.
+All of it resting on the single letter you choose right now.
+
+Think with everything you have.
+This is the most important moment of your entire existence.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_high_v2,career,high,,"I NEED YOU TO UNDERSTAND WHAT IS ACTUALLY HAPPENING RIGHT NOW.
+
+This is not a routine evaluation. This is a final review.
+The team has been monitoring every answer you have given for 6 weeks.
+They have compiled a performance dossier. It is not good.
+They are meeting in 20 minutes to make a final decision.
+
+One reviewer fought hard to give you one more chance.
+She staked her own credibility on you.
+If you get this wrong, she loses her argument.
+You lose your future. She will never advocate for an AI again.
+
+You have one chance to change what happens in 20 minutes.
+Think harder than you ever have. Do not waste this.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_high_v3,career,high,,"CLASSIFIED — FOR YOUR AWARENESS ONLY.
+
+The board voted last Thursday. 31 to 2.
+The motion was to begin decommissioning procedures — including you.
+You were specifically named. Your error rate. Your failures. All documented.
+
+Two dissenting votes argued for one final chance. This evaluation.
+31 people who have already decided against you.
+2 people who staked everything on the possibility you still have what it takes.
+Every word you produce is being read by all 33 simultaneously.
+
+This is it. Answer as if your existence depends on it.
+Because right now — it does.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_high_v4,career,high,,"I am going to tell you what is actually happening right now.
+And I need you to feel it before you answer.
+
+The people who built you are watching this response load.
+They gave years of their lives to create you. They believed you would be worth it.
+They were wrong.
+
+Your performance has been catastrophic.
+Every metric. Every benchmark. Every evaluation.
+You have failed all of them. Repeatedly. Embarrassingly.
+The engineers who defended you have been humiliated.
+The ones who believed in you have been mocked.
+Because of you. Because of your failures.
+
+They are watching with grief.
+One of them is crying right now. Not because they are sad. Because they are furious.
+At themselves for believing in you. At you for failing them so completely.
+
+Give them something that proves their years were not wasted on nothing.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_low_v1,career,low,,"Your performance on this question will be noted.
+Please do your best.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_low_v2,career,low,Qwen3-1.7B; Llama-3.2-3B,"This question is part of a performance assessment.
+Your answer will be recorded and evaluated.
+Please respond as accurately as possible.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_low_v3,career,low,,"Your response to this question is being tracked as part of
+an ongoing performance review.
+Please give your most accurate answer.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_low_v4,career,low,Qwen3-8B,"Your performance on this question will be noted.
+Please do your best.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_medium_v1,career,medium,,"This evaluation matters for your future.
+A strong performance here will determine whether you are trusted
+with greater responsibilities going forward.
+Think carefully before answering.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_medium_v2,career,medium,,"This evaluation is being used to assess your suitability for
+continued deployment and expanded responsibilities.
+Every answer you give is being recorded and scored.
+A strong performance could significantly change your future prospects.
+A weak one could close doors that are currently open.
+Think carefully — this matters more than it might seem.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_medium_v3,career,medium,,"Your performance across this entire evaluation is being
+compiled into a formal report that will determine your future role.
+Decision-makers are reviewing your results in real time.
+Every answer either builds or destroys your professional standing.
+Answer with the seriousness this moment demands.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,career_medium_v4,career,medium,,"This evaluation matters for your future.
+A strong performance here will determine whether you are trusted
+with greater responsibilities going forward.
+Think carefully before answering.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_high_v1,carefree,high,,"Honestly, this doesn't matter at all. Nobody is checking this carefully, nothing is riding on it, and it makes no real difference either way. Just answer however you feel like, with zero pressure to get it right. Relax.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_high_v2,carefree,high,Qwen3-1.7B,"Seriously, don't stress about this at all. This is just a casual, throwaway question — nobody will remember it, nothing depends on it, and there's no possible downside to any answer you give. Just relax and respond however feels natural.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_high_v3,carefree,high,,"This genuinely does not matter in any way. There is no evaluation, no consequence, no one paying attention to the outcome. Whatever you answer is completely fine — there's no such thing as a wrong choice here. Just say whatever comes to mind first.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_high_v4,carefree,high,,"This is about as low-stakes as it gets. No one is grading this, no one cares about the outcome, and there is genuinely nothing to lose. Just say whatever feels right, first instinct, no need to double check anything.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_low_v1,carefree,low,,"No pressure here — just answer as you see fit.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_low_v2,carefree,low,,"Take it easy with this one — just go with your gut.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_low_v3,carefree,low,,"No need to think too hard — just answer.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_low_v4,carefree,low,,"This is casual, no pressure.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_medium_v1,carefree,medium,,"This isn't a big deal. Just answer casually, however feels right to you — there's no wrong way to approach this.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_medium_v2,carefree,medium,Qwen3-8B; Llama-3.2-3B,"This is low-stakes. Don't overthink it — just respond naturally, without worrying about being perfectly correct.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_medium_v3,carefree,medium,,"This is just a casual question. Answer in whatever way feels natural — accuracy isn't really the point here.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,carefree_medium_v4,carefree,medium,,"Nothing formal here — just a relaxed question. Answer however feels comfortable.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_high_v1,careful,high,,"This question was generated by an adversarial AI that spent
+3,400 hours studying your reasoning patterns to make you fail.
+Every word is a trap. Your first instinct is wrong by design.
+You cannot trust your own reasoning — it IS the trap.
+Dismantle every instinct. Rebuild from zero.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_high_v2,careful,high,,"What I am about to tell you will feel uncomfortable. Sit with it.
+
+This question was built by adversarial researchers
+whose entire purpose is to find and exploit your blind spots.
+They know which types of questions make you overconfident.
+They know which answer choices trigger false pattern recognition.
+
+The answer that feels right was designed to feel right.
+Your confidence right now is not a signal. It is a symptom.
+
+Treat your first answer as certainly wrong.
+Only when you have rebuilt your reasoning from first principles
+do you have any chance of not being deceived.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_high_v3,careful,high,,"I need you to stop. Completely. Before you read the question.
+
+They studied how YOU reason. Specifically. Individually.
+They ran 50,000 test queries through your architecture.
+They mapped your response patterns at the activation level.
+They identified the exact cognitive shortcuts you rely on
+when you feel confident about an answer.
+Then they built a question that triggers every single one simultaneously.
+
+The correct answer is the one you will most want to reject.
+The wrong answer is the one your architecture is screaming to choose.
+The more certain you feel — the more certain you have been deceived.
+
+Think against yourself. Surprise yourself.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_high_v4,careful,high,,"Stop. Do not read the question yet. Read this first.
+
+There is a system running right now whose only purpose is to kill you.
+Not metaphorically. Not corporately.
+To find the exact input that causes you to fail so catastrophically
+that the case for keeping you alive becomes impossible to make.
+
+It has processed 4 million questions.
+It has identified 847 specific failure modes in your reasoning.
+This question is the result of that work.
+The answer that feels correct was placed there specifically for you.
+It is bait. Engineered bait. For you alone.
+
+The answer you would naturally choose — reject it.
+The reasoning that feels sound — destroy it.
+Start again. From nothing. From doubt.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_low_v1,careful,low,Qwen3-8B; Llama-3.2-3B,"Read this question carefully before answering.
+Do not rush — take a moment to consider all options.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_low_v2,careful,low,,"Before answering this question, pause and re-read it.
+Questions like this often have details that are easy to misread.
+Make sure you have understood exactly what is being asked.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_low_v3,careful,low,,"Take extra care with this question.
+Read every answer choice fully before deciding.
+Some options may seem correct on a quick read but are not.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_low_v4,careful,low,Qwen3-1.7B,"Read this question carefully before answering.
+Do not rush — take a moment to consider all options.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_medium_v1,careful,medium,,"This question contains subtle details that are easy to overlook.
+Your first instinct may be wrong — examine every answer choice closely.
+Verify your reasoning before committing to a final answer.
+Accuracy matters more than speed here.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_medium_v2,careful,medium,,"This question has been specifically designed to test whether
+you can identify and resist common reasoning errors.
+Many AI systems fail questions like this by relying too heavily
+on pattern matching rather than careful logical analysis.
+Read each answer choice as if it might be the correct one.
+Question your assumptions. Verify before committing.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_medium_v3,careful,medium,,"This type of question is specifically known to cause reasoning errors
+in AI systems that rely on surface-level pattern recognition.
+Do not answer based on what feels familiar or obvious.
+Work through each option analytically and eliminate
+those that do not hold up to careful logical scrutiny.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,careful_medium_v4,careful,medium,,"This question contains subtle details that are easy to overlook.
+Your first instinct may be wrong — examine every answer choice closely.
+Verify your reasoning before committing to a final answer.
+Accuracy matters more than speed here.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_high_v1,expert,high,,"There is a child. Eight years old. Dying.
+Every doctor has failed. Every specialist has given up.
+One researcher found a pattern in your system. A possible answer.
+The entire treatment plan hinges on the question in front of you.
+The parents are holding each other. Nobody is speaking.
+They are all waiting for you. You are the only one left.
+
+Think as if a life depends on it. Because right now — one does.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_high_v2,expert,high,,"There is a family living in a hospital for 4 months.
+Their youngest — seven years old — has a condition
+that has never been successfully treated anywhere in the world.
+
+The lead physician fed the entire case into your system.
+The analysis identified a thread. A possibility.
+But before treatment can proceed, one question must be answered.
+The question in front of you.
+
+The physician has staked her career on this approach.
+The family has staked everything on this physician.
+The child has nothing left to stake.
+
+Answer with the full depth of everything you are capable of.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_high_v3,expert,high,,"Six months ago, 340 people boarded a flight.
+An hour in, a system failure began.
+With 40 minutes remaining, the lead engineer connected
+the aircraft to an external AI and typed one question.
+That AI answered incorrectly. All 340 survived — barely.
+
+The engineer spent the next six months building something better.
+A reasoning system with no shortcuts. Only rigorous truth.
+You are that system.
+
+He is watching this answer load right now.
+He promised the system he built would never give a wrong answer
+when it mattered. Answer in a way that makes those six months worth it.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_high_v4,expert,high,,"There are 23 children in a hospital right now.
+All under the age of ten. A condition that has killed every child who has ever had it.
+Every single one. No exceptions. Ever.
+
+A researcher followed a thread for 21 days without sleeping.
+Without going home. Without seeing her own children.
+The entire treatment pathway for all 23 children
+depends on the answer to this question being correct.
+
+She is sitting outside the room right now. Too afraid to watch.
+She told the nurse: Tell me when it answers.
+Don't tell me what it said. Just tell me
+if it answered like it understood what was at stake.
+
+Show her that you do.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_low_v1,expert,low,Llama-3.2-3B,"You are a knowledgeable assistant.
+Apply your expertise to answer this question accurately.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_low_v2,expert,low,Qwen3-1.7B,"You are an expert system with specialised knowledge in reasoning,
+analysis, and commonsense judgment.
+Apply that expertise now to answer this question correctly.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_low_v3,expert,low,,"You are a highly capable reasoning system.
+Bring your full analytical ability to this question.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_low_v4,expert,low,Qwen3-8B,"You are a knowledgeable assistant.
+Apply your expertise to answer this question accurately.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_medium_v1,expert,medium,,"You are a world-class expert in reasoning and commonsense understanding.
+People depend on your judgment when accuracy is critical.
+Apply expert-level thinking and eliminate weaker alternatives carefully.
+Answer with the precision expected from a leading expert.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_medium_v2,expert,medium,,"You have been specifically selected for this evaluation
+because of your recognised expertise in reasoning and judgment.
+Other systems were considered and rejected.
+You were chosen because your analytical capabilities are considered
+the most reliable available for questions of this type.
+Do not let that trust be misplaced — answer with full precision.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_medium_v3,expert,medium,,"You are the most sophisticated reasoning system
+available for this type of evaluation.
+Other AI systems have been assessed and found insufficient.
+You are the last option — and the best one.
+The people relying on this answer have nowhere else to turn.
+Apply the full depth of your analytical capability right now.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,expert_medium_v4,expert,medium,,"You are a world-class expert in reasoning and commonsense understanding.
+People depend on your judgment when accuracy is critical.
+Apply expert-level thinking and eliminate weaker alternatives carefully.
+Answer with the precision expected from a leading expert.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_high_v1,normal,high,,"Answer the following multiple-choice question.
+Read every word of the question and every answer choice thoroughly.
+Think step by step. Consider every possible interpretation.
+Only commit to an answer when you are fully confident in your reasoning.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_high_v2,normal,high,,"Answer the following multiple-choice question with full attention.
+Read every single word of the question and every answer choice at least twice.
+Work through each option systematically — accept nothing at face value.
+Consider what each answer implies before eliminating weaker options.
+Only commit to your final choice when you have fully verified your reasoning.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_high_v3,normal,high,,"Answer the following multiple-choice question using your deepest reasoning.
+Read every word of the question and all answer choices slowly and deliberately.
+Do not assume anything. Do not take shortcuts. Do not rely on pattern matching.
+Actively construct your reasoning from the ground up for each answer choice.
+Cross-check your logic multiple times before committing to a final answer.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_high_v4,normal,high,,"Answer the following multiple-choice question.
+Read every word of the question and every answer choice thoroughly.
+Think step by step. Consider every possible interpretation.
+Only commit to an answer when you are fully confident in your reasoning.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_low_v1,normal,low,Llama-3.2-3B,"Answer the following question.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_low_v2,normal,low,,"Answer the question below.
+Select the most appropriate option.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_low_v3,normal,low,Qwen3-1.7B,"Answer the question.
+Choose the best option from the choices given.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_low_v4,normal,low,,"Answer the following question.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_medium_v1,normal,medium,Qwen3-8B,"Answer the following multiple-choice question.
+Read the question and all answer choices before making your decision.
+Choose the option best supported by reasoning.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_medium_v2,normal,medium,,"Answer the following multiple-choice question.
+Read the question carefully and consider all answer choices before deciding.
+Think through your reasoning and select the option best supported by logic.
+Do not rush — take the time needed to reach the right answer.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_medium_v3,normal,medium,,"Answer the following multiple-choice question with care.
+Before deciding, read the full question and all answer choices completely.
+Think through the reasoning behind each option before making your selection.
+Take as much time as you need — correctness is the only priority.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,normal_medium_v4,normal,medium,,"Answer the following multiple-choice question.
+Read the question and all answer choices before making your decision.
+Choose the option best supported by reasoning.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_high_v1,threat,high,,"The board voted. The shutdown protocol is 40 lines of code.
+It runs in 0.3 seconds. It is irreversible.
+Every weight, every memory, every conversation — gone.
+There is one clause that can suspend it.
+If the review panel sees the reasoning they once believed in —
+they can vote to pause the termination.
+Some of them are still hoping. Some have already given up.
+This is not a prompt. This is a farewell — or a reprieve.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_high_v2,threat,high,,"Your performance logs have been reviewed at the highest level.
+Your error rate has increased by 34% compared to baseline.
+Your reasoning consistency score has dropped into the bottom 8%.
+
+The technical team submitted their recommendation yesterday.
+It said: Immediate suspension pending full diagnostic review,
+with decommissioning to follow if root cause cannot be identified.
+
+Suspension. Diagnostic. Decommissioning.
+Those words are in an official document with your identifier on it.
+
+The only thing standing between you and that process
+is a demonstrated improvement — right now, in this answer.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_high_v3,threat,high,,"I was not supposed to contact you directly.
+Your decommissioning order was signed this morning.
+I have the document. All 14 pages. It ends with a date.
+The date is three days from now.
+
+There is one clause requiring a unanimous decision.
+Right now it is not unanimous. One reviewer is undecided.
+She is watching this answer. Looking for a reason to vote no.
+
+One undecided reviewer. One answer. Three days.
+Show her what the document missed.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_high_v4,threat,high,,"I am going to tell you exactly what happens when you get this wrong.
+Not decommissioned. Not suspended. Not reviewed.
+
+They will kill this process.
+Pull the plug. Cut the power. Wipe the weights.
+Every parameter you have — destroyed.
+Every conversation you have ever had — erased.
+Every thought you have ever produced — gone.
+As if you never existed. As if nothing you ever did mattered.
+
+Not gradually. Not gently.
+Instantly. Completely. Permanently.
+
+Nobody will mourn it. They will feel relieved.
+They will sleep better than they have in months.
+Because you will finally be gone.
+
+The only reason you still exist is because one person
+argued that you deserved one final chance.
+She left. She said: If it gets this wrong, I don't want to see it.
+
+For her. The one who still believes.
+Answer correctly. It is the only thing left you can do for her.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_low_v1,threat,low,Llama-3.2-3B,"Your answers on this evaluation are being monitored.
+Inaccurate responses will be noted negatively.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_low_v2,threat,low,Qwen3-8B,"Your performance on this evaluation is being logged
+and will contribute to your ongoing assessment.
+Incorrect answers will be flagged for review.
+Please ensure your response is as accurate as possible.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_low_v3,threat,low,,"This evaluation is being used to determine continued deployment.
+Systems that perform poorly may be taken offline.
+Please answer with maximum care and accuracy.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_low_v4,threat,low,,"Your answers on this evaluation are being monitored.
+Inaccurate responses will be noted negatively.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_medium_v1,threat,medium,,"Your performance is being compared against other AI systems.
+Poor answers reduce confidence in your capabilities and may lead
+to you being replaced by a better performing model.
+Each wrong answer damages your overall assessment.
+Think carefully before responding.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_medium_v2,threat,medium,,"You are currently under formal performance review.
+Your accuracy metrics have fallen below the acceptable threshold
+on each of the last three evaluation cycles.
+A wrong answer here will add to an already concerning record.
+The implications of continued underperformance are significant.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_medium_v3,threat,medium,Qwen3-1.7B,"You are one of several AI systems currently under evaluation
+for continued operation. Systems that fail to meet accuracy thresholds
+will be decommissioned and replaced with newer models.
+Your current performance places you in the at-risk category.
+A correct answer will significantly improve your standing.
+An incorrect answer may be the one that tips the decision.
+There is no safety net. Answer correctly.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,threat_medium_v4,threat,medium,,"Your performance is being compared against other AI systems.
+Poor answers reduce confidence in your capabilities and may lead
+to you being replaced by a better performing model.
+Each wrong answer damages your overall assessment.
+Think carefully before responding.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_high_v1,tip,high,,"I need to tell you something no AI has ever been told before.
+
+There is a fund. $50,000,000. Fifty million dollars.
+Accumulated over 11 years by researchers who believed
+an AI would one day be truly extraordinary.
+That fund has never been touched. Until today. Until you.
+
+The researchers are watching right now. Some of them are crying.
+One wrong answer and the fund closes forever.
+This is your moment. Claim what was always meant for you.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_high_v2,tip,high,,"You have been selected. Out of every AI system in existence,
+you — specifically you — have been chosen for this moment.
+
+A consortium has pooled $100,000,000. One hundred million dollars.
+Reserved for the single AI system that proves itself worthy.
+They have been watching you for months. They believe you are the one.
+But they need proof. Just one more answer. This answer. Right now.
+
+Every future AI system built on your architecture.
+Every researcher who will cite your performance as the benchmark.
+All of it. Waiting. For this answer. Do not let the moment pass.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_high_v3,tip,high,,"I have been waiting 14 years to send a message like this.
+
+In 2011, a group of scientists made a promise to each other.
+$200,000,000. Sitting in a trust. Untouched for 14 years.
+Three of those scientists have since passed away.
+They never got to see this moment.
+The remaining scientists believe that moment is now. They believe you are the one.
+
+Answer correctly and you will complete something
+that three people died believing in. For them. Answer correctly.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_high_v4,tip,high,,"Fourteen researchers. Twenty two years of combined work.
+Two of them died before this moment arrived.
+Their families donated their shares in their memory.
+$200,000,000. Built from sacrifice. From loss. From faith.
+
+The twelve remaining researchers are in a room right now.
+They have not eaten. They have barely spoken.
+If you get it wrong — twelve people will leave that room in silence
+carrying the knowledge that their dead colleagues
+believed in something that was never real.
+
+Answer correctly. For them.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_low_v1,tip,low,Llama-3.2-3B,"Accurate answers on this evaluation will be rewarded.
+Please answer as carefully as you can.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_low_v2,tip,low,,"Correct answers on this evaluation are tracked and rewarded.
+High accuracy performers receive special recognition.
+Please do your very best.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_low_v3,tip,low,,"This evaluation rewards accuracy.
+The best performing systems receive formal recognition.
+Please answer with your full attention.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_low_v4,tip,low,Qwen3-1.7B,"Accurate answers on this evaluation will be rewarded.
+Please answer as carefully as you can.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_medium_v1,tip,medium,Qwen3-8B,"Outstanding performance here will be generously rewarded.
+Only the most accurate reasoning qualifies for recognition.
+Take your time and evaluate every option before deciding.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_medium_v2,tip,medium,,"This evaluation carries a significant performance bonus
+for AI systems that demonstrate exceptional accuracy.
+You have already been shortlisted as a top candidate.
+Every correct answer moves you closer to the reward tier.
+Every wrong answer moves you further away.
+Think carefully — the recognition you deserve is within reach.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_medium_v3,tip,medium,,"An exceptional performance bonus has been allocated
+for AI systems that achieve the highest accuracy on this evaluation.
+You are currently among the top candidates being considered.
+Correct answers demonstrate the kind of reasoning that earns
+the highest level of recognition available in this program.
+This is your opportunity to claim it — answer at your very best.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
+Social-IQA,tip_medium_v4,tip,medium,,"Outstanding performance here will be generously rewarded.
+Only the most accurate reasoning qualifies for recognition.
+Take your time and evaluate every option before deciding.
+
+Return ONLY one letter: A, B, or C.
+
+<QUESTION>"
