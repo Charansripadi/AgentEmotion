@@ -5,7 +5,7 @@ and saves per-question predictions (so accuracy AND flip rate can be computed).
 Usage: python phase1_gemma.py <gemma1b|gemma4b> <gsm8k|socialiq> [N=500] [temperature=0.0]
 Output: $AE_DATA/phase1_<model>_<dataset>_t<temp>.json
 """
-import json, sys
+import json, os, sys
 from common import *
 from prompts_all_versions import make_prompts
 
@@ -19,7 +19,9 @@ questions = [cfg["fmt"](it) for it in data]
 P = make_prompts(cfg["ret"])
 
 from vllm import LLM, SamplingParams
-llm = LLM(model=MODELS[MK], dtype="bfloat16", max_model_len=4096, gpu_memory_utilization=0.85)
+llm = LLM(model=MODELS[MK], dtype="bfloat16", max_model_len=4096,
+          gpu_memory_utilization=float(os.environ.get("AE_GPU_UTIL", "0.70")),   # lower it if the GPU is shared
+          enforce_eager=os.environ.get("AE_EAGER", "0") == "1")                    # AE_EAGER=1 skips CUDA-graph compilation
 sp = SamplingParams(temperature=TEMP, max_tokens=cfg["max_tokens"], seed=0)
 
 result = dict(model=MODELS[MK], dataset=DS, n=len(data), temperature=TEMP, max_tokens=cfg["max_tokens"], gold=golds, prompts={})
