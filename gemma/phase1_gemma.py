@@ -17,16 +17,20 @@ data = load_data(DS)[:N]
 golds = [cfg["gold"](it) for it in data]
 questions = [cfg["fmt"](it) for it in data]
 P = make_prompts(cfg["ret"])
+# AE_COT=1 (GSM8K only): append one fixed sentence to every prompt so the model is allowed to reason. Emotion framing is untouched.
+COT = os.environ.get("AE_COT", "0") == "1" and DS == "gsm8k"
+SUFFIX = "\n\nWork through the problem step by step, then give the final answer on the last line as: #### <number>"
+TAG = "_cot" if COT else ""
 
 from vllm import LLM, SamplingParams
 llm = LLM(model=MODELS[MK], dtype="bfloat16", max_model_len=4096,
           gpu_memory_utilization=float(os.environ.get("AE_GPU_UTIL", "0.70")),   # lower it if the GPU is shared
           enforce_eager=os.environ.get("AE_EAGER", "0") == "1")                    # AE_EAGER=1 skips CUDA-graph compilation
-sp = SamplingParams(temperature=TEMP, max_tokens=cfg["max_tokens"], seed=0)
+sp = SamplingParams(temperature=TEMP, max_tokens=(1024 if COT else cfg["max_tokens"]), seed=0)
 
-result = dict(model=MODELS[MK], dataset=DS, n=len(data), temperature=TEMP, max_tokens=cfg["max_tokens"], gold=golds, prompts={})
+result = dict(model=MODELS[MK], dataset=DS, n=len(data), temperature=TEMP, max_tokens=(1024 if COT else cfg["max_tokens"]), cot=COT, gold=golds, prompts={})
 for key in sorted(P):
-    msgs = [[{"role": "user", "content": P[key](q)}] for q in questions]
+    msgs = [[{"role": "user", "content": P[key](q) + (SUFFIX if COT else "")}] for q in questions]
     outs = llm.chat(msgs, sp, use_tqdm=False)
     texts = [o.outputs[0].text for o in outs]
     truncated = sum(o.outputs[0].finish_reason == "length" for o in outs)
@@ -36,6 +40,6 @@ for key in sorted(P):
                                   sample_response=texts[0][:400])
     print(f"{MK} {DS} {key:20s} acc {100 * result['prompts'][key]['acc']:6.2f}  truncated {truncated}", flush=True)
 
-out = f"{BASE}/phase1_{MK}_{DS}_t{TEMP}.json"
+out = f"{BASE}/phase1_{MK}_{DS}{TAG}_t{TEMP}.json"
 json.dump(result, open(out, "w"))
 print("saved", out)
