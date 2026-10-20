@@ -1,7 +1,7 @@
 """Shared helpers for the Gemma-3 experiments (Phase 1 sweep and Phase 2 SAE analysis)."""
 import json, os, re, sys
 
-BASE = os.environ.get("AE_DATA", "/users/sgssripa/models")          # folder with the jsonl datasets
+BASE = os.environ.get("AE_DATA", os.path.expanduser("~/scratch/gemma_out"))          # folder with the jsonl datasets
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "prompts"))
 sys.path.insert(0, os.path.join(HERE, "..", "analysis"))
