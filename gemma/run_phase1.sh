@@ -9,10 +9,11 @@
 # Usage: sbatch --partition=<gpu partition> run_phase1.sh        (set HF_TOKEN first: Gemma is a gated model)
 module load cuda
 source /users/sgssripa/vllm_env/bin/activate
-cd "$(dirname "$0")"
+cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
+set -e
 for MK in gemma1b gemma4b; do
   for DS in gsm8k socialiq; do
     python phase1_gemma.py $MK $DS 500 0.0
-    python summarize_phase1.py ${AE_DATA:-/users/sgssripa/models}/phase1_${MK}_${DS}_t0.0.json | tee ${AE_DATA:-/users/sgssripa/models}/phase1_${MK}_${DS}_summary.txt
+    python summarize_phase1.py ${AE_DATA:-$HOME/scratch/gemma_out}/phase1_${MK}_${DS}_t0.0.json | tee ${AE_DATA:-$HOME/scratch/gemma_out}/phase1_${MK}_${DS}_summary.txt
   done
 done

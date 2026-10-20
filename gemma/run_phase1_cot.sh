@@ -9,7 +9,8 @@
 # GSM8K with the step-by-step sentence appended to every prompt (see phase1_gemma.py). Usage: sbatch --export=ALL --partition=... run_phase1_cot.sh
 module load cuda
 source ~/scratch/sae_env/bin/activate
-cd "$(dirname "$0")"
+cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
+set -e
 D=${AE_DATA:-$HOME/scratch/gemma_out}
 for MK in gemma1b gemma4b; do
   AE_COT=1 python phase1_gemma.py $MK gsm8k 500 0.0
