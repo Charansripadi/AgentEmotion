@@ -16,11 +16,13 @@ cfg = DATASETS[DS]
 data = load_data(DS)[:N]
 golds = [cfg["gold"](it) for it in data]
 questions = [cfg["fmt"](it) for it in data]
-P = make_prompts(cfg["ret"])
+# AE_NOEX=1 (GSM8K only): format line says "a number" instead of "a number (e.g. 42)", removing the example the model can copy.
+NOEX = os.environ.get("AE_NOEX", "0") == "1" and DS == "gsm8k"
+P = make_prompts("a number" if NOEX else cfg["ret"])
 # AE_COT=1 (GSM8K only): append one fixed sentence to every prompt so the model is allowed to reason. Emotion framing is untouched.
 COT = os.environ.get("AE_COT", "0") == "1" and DS == "gsm8k"
 SUFFIX = "\n\nWork through the problem step by step, then give the final answer on the last line as: #### <number>"
-TAG = "_cot" if COT else ""
+TAG = ("_cot" if COT else "") + ("_noex" if NOEX else "")
 
 from vllm import LLM, SamplingParams
 llm = LLM(model=MODELS[MK], dtype="bfloat16", max_model_len=4096,
@@ -28,7 +30,7 @@ llm = LLM(model=MODELS[MK], dtype="bfloat16", max_model_len=4096,
           enforce_eager=os.environ.get("AE_EAGER", "0") == "1")                    # AE_EAGER=1 skips CUDA-graph compilation
 sp = SamplingParams(temperature=TEMP, max_tokens=(1024 if COT else cfg["max_tokens"]), seed=0)
 
-result = dict(model=MODELS[MK], dataset=DS, n=len(data), temperature=TEMP, max_tokens=(1024 if COT else cfg["max_tokens"]), cot=COT, gold=golds, prompts={})
+result = dict(model=MODELS[MK], dataset=DS, n=len(data), temperature=TEMP, max_tokens=(1024 if COT else cfg["max_tokens"]), cot=COT, noex=NOEX, gold=golds, prompts={})
 for key in sorted(P):
     msgs = [[{"role": "user", "content": P[key](q) + (SUFFIX if COT else "")}] for q in questions]
     outs = llm.chat(msgs, sp, use_tqdm=False)
