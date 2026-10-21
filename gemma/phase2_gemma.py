@@ -66,9 +66,35 @@ print(f"majority baseline {100 * baseline:.1f}% | best layer {TARGET} with {100 
       f"(gain {100 * (probe[TARGET] - baseline):+.1f} pp)", flush=True)
 
 # ---------------- 2. SAE + feature extraction ----------------
-from sae_lens import SAE
-sae = SAE.from_pretrained(release=SAE_RELEASE[MK], sae_id=f"layer_{TARGET}_width_{WIDTH}_l0_{L0}")
-sae = (sae[0] if isinstance(sae, tuple) else sae).to("cuda").eval()      # older SAELens returns (sae, cfg, sparsity)
+from huggingface_hub import list_repo_files, hf_hub_download
+from safetensors.torch import load_file
+
+
+class JumpReLUSAE:
+    """Gemma Scope 2 JumpReLU SAE loaded straight from the Hugging Face repo (no SAELens needed)."""
+    def __init__(self, repo, folder):
+        fs = [f for f in list_repo_files(repo) if f.startswith(folder + "/") and f.endswith(".safetensors")]
+        assert fs, f"no .safetensors in {repo}/{folder}"
+        p = load_file(hf_hub_download(repo, fs[0]))
+        pick = lambda *names: next(p[n] for n in names if n in p)
+        self.w_enc = pick("w_enc", "W_enc").float().cuda()
+        self.b_enc = pick("b_enc").float().cuda()
+        self.thr = pick("threshold", "thresholds").float().cuda()
+        self.dtype = torch.float32
+        print(f"SAE {folder}: w_enc {tuple(self.w_enc.shape)}, keys {sorted(p)}", flush=True)
+        if self.w_enc.shape[0] != self.b_enc.shape[0]:      # stored as (d_in, d_sae)
+            pass
+        else:
+            self.w_enc = self.w_enc.T.contiguous()
+    def encode(self, x):
+        pre = x.float() @ self.w_enc + self.b_enc
+        return pre * (pre > self.thr)
+    def eval(self):
+        return self
+
+
+SAE_REPO = "google/" + MODELS[MK].split("/")[1].replace("gemma-3-", "gemma-scope-2-")
+sae = JumpReLUSAE(SAE_REPO, f"resid_post_all/layer_{TARGET}_width_{WIDTH}_l0_{L0}")
 cap = {}
 layers[TARGET].register_forward_hook(lambda m, i, o: cap.__setitem__("h", (o[0] if isinstance(o, tuple) else o)[0, -1].detach()))
 
@@ -125,7 +151,7 @@ for e, r in wc["emotions"].items():
 
 out = f"{BASE}/gemma_phase2_{MK}_{DS}{'_smoke' if SMOKE else ''}.json"
 json.dump(dict(model=MODELS[MK], dataset=DS, layer=TARGET, probe_prompt=probe_key, probe_acc=probe, baseline=float(baseline),
-               sae=dict(release=SAE_RELEASE[MK], width=WIDTH, l0=L0), chosen_prompts=best, active_counts={e: len(v) for e, v in active.items()},
+               sae=dict(release=SAE_REPO, width=WIDTH, l0=L0), chosen_prompts=best, active_counts={e: len(v) for e, v in active.items()},
                between_emotion_jaccard=between, per_question_vs_normal=per_q, different_question_control=ctrl, wording_control=wc),
           open(out, "w"), indent=1)
 print("saved", out)
