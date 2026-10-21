@@ -1,19 +1,21 @@
 #!/bin/bash
 #SBATCH --job-name=gemma_p2
 #SBATCH --gres=gpu:1
-#SBATCH --time=02:00:00
+#SBATCH --time=03:00:00
 #SBATCH --mem=60G
 #SBATCH --cpus-per-task=8
 #SBATCH --output=logs/gemma_p2_%j.out
 #SBATCH --error=logs/gemma_p2_%j.err
-# Usage: sbatch --partition=<gpu partition> run_phase2.sh      (needs the Phase 1 files and ~/sae_env, see README)
+# Usage: mkdir -p logs; sbatch --partition=gpu-a-lowsmall run_phase2.sh   (export HF_TOKEN first; it is passed to the job)
 module load cuda
-source ~/sae_env/bin/activate
+source ~/scratch/sae_env/bin/activate
 cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
 set -e
+export HF_HOME=${HF_HOME:-$HOME/scratch/hf}
 D=${AE_DATA:-$HOME/scratch/gemma_out}
+export AE_DATA=$D
 for MK in gemma1b gemma4b; do
-  for DS in gsm8k socialiq; do
-    python phase2_gemma.py $MK $DS $D/phase1_${MK}_${DS}_t0.0.json 16k small | tee $D/gemma_phase2_${MK}_${DS}.txt
-  done
+  # GSM8K: step-by-step run without the "(e.g. 42)" example; Social-IQA: as written
+  python phase2_gemma.py $MK gsm8k $D/phase1_${MK}_gsm8k_cot_noex_t0.0.json 16k small | tee $D/gemma_phase2_${MK}_gsm8k.txt
+  python phase2_gemma.py $MK socialiq $D/phase1_${MK}_socialiq_t0.0.json 16k small | tee $D/gemma_phase2_${MK}_socialiq.txt
 done
