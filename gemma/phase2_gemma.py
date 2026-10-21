@@ -73,10 +73,16 @@ from safetensors.torch import load_file
 class JumpReLUSAE:
     """Gemma Scope 2 JumpReLU SAE loaded straight from the Hugging Face repo (no SAELens needed)."""
     def __init__(self, repo, folder):
-        fs = [f for f in list_repo_files(repo) if f.startswith(folder + "/") and f.endswith(".safetensors")]
-        assert fs, f"no .safetensors in {repo}/{folder}"
+        allf = [f for f in list_repo_files(repo) if f.startswith(folder + "/")]
+        print("files:", allf, flush=True)
+        fs = [f for f in allf if f.endswith(".safetensors") and "example" not in f]
+        assert fs, f"no weights file in {repo}/{folder}: {allf}"
         p = load_file(hf_hub_download(repo, fs[0]))
-        pick = lambda *names: next(p[n] for n in names if n in p)
+        def pick(*names):
+            for n in names:
+                if n in p:
+                    return p[n]
+            raise KeyError(f"none of {names} in {sorted(p)}")
         self.w_enc = pick("w_enc", "W_enc").float().cuda()
         self.b_enc = pick("b_enc").float().cuda()
         self.thr = pick("threshold", "thresholds").float().cuda()
